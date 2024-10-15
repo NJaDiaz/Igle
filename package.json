@@ -10,6 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/svelte": "^5.7.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "@headlessui/react": "^2.1.10",
+    "@material-tailwind/react": "^2.1.10",
     "astro": "^4.16.3"
   }
 }

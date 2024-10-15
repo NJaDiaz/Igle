@@ -1,0 +1,45 @@
+<section class="escuchar content-center h-full justify-center text-white font-bold" id="escucha">
+    <div class="p-8 mt-7">
+    <h1 class="text-center md:text-4xl text-2xl uppercase">Escucha nuevamente</h1>
+    <h4 class="text-xl text-center my-4">No te pierdas de ninguna predica. <br>
+        Volvé a escuchar las predicas más recientes</h4>
+    </div>
+    <div class="spotify-player my-8">
+        <iframe 
+            style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/6jHAZvvAal29MJJiQUN8nV?utm_source=generator" 
+            width="75%" height="380" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<style>
+#escucha {
+    position: relative;
+    width: auto;
+    background-color: rgb(55 65 81);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h4 {
+    color: #ffffff;
+}
+
+.spotify-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 20px 0;
+}
+
+iframe {
+    border-radius: 12px;
+    border: none;
+}
+</style>
