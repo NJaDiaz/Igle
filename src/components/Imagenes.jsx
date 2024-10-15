@@ -27,28 +27,29 @@ const itemData = [
 const Imagenes = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
- 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % itemData.length);
-    }, 5000); 
+    }, 5000);
 
-   
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="image-gallery">
-      <figure>
+    <div className="image-gallery h-full flex justify-center items-center">
+      <figure className="text-center">
         <img
-          className="h-96 w-full rounded-lg object-cover object-center"
+          className="w-full md:h-1/3 rounded-lg object-cover object-center"
           src={`${itemData[currentIndex].img}?w=1260&h=750&fit=crop&auto=format`}
           alt={itemData[currentIndex].title}
           loading="lazy"
         />
-        <Typography as="caption" variant="small" className="mt-2 text-center font-normal">
-          {itemData[currentIndex].title}
-        </Typography>
+        <div className="mt-2 text-center">
+          
+          <Typography as="p" variant="small" className="font-normal">
+            {itemData[currentIndex].title}
+          </Typography>
+        </div>
       </figure>
     </div>
   );

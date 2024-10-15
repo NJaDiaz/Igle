@@ -1,45 +1,90 @@
-<section class="escuchar content-center h-full justify-center text-white font-bold" id="escucha">
-    <div class="p-8 mt-7">
-    <h1 class="text-center md:text-4xl text-2xl uppercase">Escucha nuevamente</h1>
-    <h4 class="text-xl text-center my-4">No te pierdas de ninguna predica. <br>
-        Volvé a escuchar las predicas más recientes</h4>
+---
+
+---
+<section class="content-center  font-bold bg-slate-100" id="escucha">
+    <div class="p-8 mt-7 text-gray-700">
+        <h1 class="text-center md:text-5xl text-2xl uppercase">Escucha nuevamente</h1>
+        <h4 class="text-xl text-gray-700 text-center my-4">No te pierdas de ninguna predica, podés seguir escuchando en línea cada mensaje donde quiera que estés.
     </div>
-    <div class="spotify-player my-8">
-        <iframe 
-            style="border-radius:12px" 
-            src="https://open.spotify.com/embed/playlist/6jHAZvvAal29MJJiQUN8nV?utm_source=generator" 
-            width="75%" height="380" 
-            allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-        </iframe>
+
+    <div class="p-7 bg-gray">
+        <h1 class="text-center text-gray-700 md:text-5xl text-2xl uppercase">VISÍTANOS A TRAVÉS DE YOUTUBE </h1>
+        <p class=" text-gray-700 text-center md:text-xl my-4">Volvé a ver las predicas más recientes en nuestro canal de Youtube.</p>
+        
+        <div class="youtube flex items-center justify-between p-4 rounded-lg bg-gray max-w-4xl mb-4 md:mb-1 mx-auto">
+            <div class="flex items-center space-x-4">
+                <a href="https://www.youtube.com/@vidaenfe">
+                    <img src="https://yt3.googleusercontent.com/6n6m92pF3S4-il-uDu_a5sZqnXw7YdzVAGFhFRyllonXTs-7MbljX9_JAlKbc7lN5TLkoz0UhA=s160-c-k-c0x00ffffff-no-rj" alt="Logo del canal" class="w-16 h-16 rounded-full">
+                </a>
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900">Vida en Fe</h2>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/channel_link" target="_blank" class="flex items-center text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="w-24 mr-2">
+            </a>
+        </div>
+    
+       
+        <div class="p-7 bg-gray rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="video-card">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
+            </div>
+    
+            <div class="video-card w-full">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
+            </div>
+    
+            <div class="video-card">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
+            </div>
+    
+            <div class="video-card">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
+            </div>
+        </div>
     </div>
+    
+
+    <div class="p-6 my-8 z-50">
+        <h1 class="text-center text-gray-700 md:text-5xl text-2xl uppercase">TAMBIÉN EN NUESTRO SPOTIFY </h1>
+        <p class=" text-gray-700 text-center md:text-xl my-4">Escucha cada uno de nuestros mensajes en cualquier lugar que te encuentres.</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/1Dm4T50A223lsmaRJw8fpr?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    
+    
+    
+
+  
 </section>
+
 
 <style>
 #escucha {
     position: relative;
     width: auto;
-    background-color: rgb(55 65 81);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 }
 
-h1, h4 {
-    color: #ffffff;
+.youtube{
+    background-color: rgba(255, 196, 128, 0.315);
 }
 
-.spotify-player {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    padding: 20px 0;
-}
-
-iframe {
+.video-card {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 196, 128, 0.315);
     border-radius: 12px;
-    border: none;
+}
+
+.video-card h3 {
+    color: rgb(39, 38, 38);
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-top: 5px;
 }
 </style>
