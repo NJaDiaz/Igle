@@ -17,36 +17,60 @@
                     <img src="https://yt3.googleusercontent.com/6n6m92pF3S4-il-uDu_a5sZqnXw7YdzVAGFhFRyllonXTs-7MbljX9_JAlKbc7lN5TLkoz0UhA=s160-c-k-c0x00ffffff-no-rj" alt="Logo del canal" class="w-16 h-16 rounded-full">
                 </a>
                 <div>
-                    <h2 class="text-xl font-semibold text-gray-900">Vida en Fe</h2>
+                    <h2 class="md:text-xl text-sm font-semibold text-gray-900">Vida en Fe</h2>
                 </div>
             </div>
-            <a href="https://www.youtube.com/channel_link" target="_blank" class="flex items-center text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="w-24 mr-2">
+            <a href="https://www.youtube.com/@vidaenfe" target="_blank" class="flex items-center text-white px-4 py-2 rounded-lg hover:bg-red-500 transition-colors">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="md:w-24 w-16 mr-2">
             </a>
         </div>
     
        
-        <div class="p-7 bg-gray rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div class="video-card">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
-            </div>
     
-            <div class="video-card w-full">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
-            </div>
+<link rel="stylesheet" href="https://unpkg.com/lite-youtube-embed/src/lite-yt-embed.css">
+
+
+<script>
+    if (!customElements.get('lite-youtube')) {
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/lite-youtube-embed/src/lite-yt-embed.js';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  </script>
+  
+
+
+
+<div class="p-7 bg-gray rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="video-card">
+      <lite-youtube 
+            videoid="pGL1aeRBbvI" 
+            style="width:100%; height:315px; border-radius:25px;"
+        ></lite-youtube>
+        <h3 class="text-lg font-semibold mt-2">Domingo 13 de octubre</h3>
+    </div>
+
+    <div class="video-card">
+        <lite-youtube 
+            videoid="ASzsblL-gzE" 
+            style="width:100%; height:315px; border-radius:25px;"
+        ></lite-youtube>
+        <h3 class="text-lg font-semibold mt-2">Domingo 6 de octubre</h3>
+    </div>
+
+    <div class="video-card">
+        <lite-youtube 
+            videoid="5vk4cRKk9ms" 
+            style="width:100%; height:315px; border-radius:25px;"
+        ></lite-youtube>
+        <h3 class="text-lg font-semibold mt-2">Domingo 22 de septiembre</h3>
+    </div>
+</div>
+
+        
     
-            <div class="video-card">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
-            </div>
-    
-            <div class="video-card">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pGL1aeRBbvI?si=7CvJvUo_8mkK1ZN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3 class="text-lg font-semibold mt-2">Domingo 13 octubre</h3>
-            </div>
-        </div>
+        
     </div>
     
 

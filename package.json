@@ -15,7 +15,8 @@
     "@astrojs/tailwind": "^5.1.2",
     "@headlessui/react": "^2.1.10",
     "@material-tailwind/react": "^2.1.10",
-    "astro": "^4.16.3",
+    "astro": "^4.16.5",
+    "gsap": "^3.12.5",
     "swiper": "^11.1.14"
   }
 }

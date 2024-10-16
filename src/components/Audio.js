@@ -12,9 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   playPause.addEventListener('click', togglePlay);
   player.addEventListener('timeupdate', updateProgress);
+  
+  // Esperar a que se carguen los metadatos antes de mostrar la duración
   player.addEventListener('loadedmetadata', function() {
-    totalTime.textContent = formatTime(player.duration);
+    if (!isNaN(player.duration)) {
+      totalTime.textContent = formatTime(player.duration);
+    } else {
+      console.error('La duración del audio no está disponible.');
+    }
   });
+
   player.addEventListener('volumechange', updateVolume);
   player.addEventListener('ended', function() {
     playPauseIcon.setAttribute('d', 'M18 12L0 24V0'); 
@@ -39,9 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function updateProgress() {
-    const percent = (player.currentTime / player.duration) * 100;
-    progress.style.width = percent + '%';
-    currentTime.textContent = formatTime(player.currentTime);
+    if (player.duration) {
+      const percent = (player.currentTime / player.duration) * 100;
+      progress.style.width = percent + '%';
+      currentTime.textContent = formatTime(player.currentTime);
+    }
   }
 
   function updateVolume() {

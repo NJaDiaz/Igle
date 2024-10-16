@@ -1,5 +1,118 @@
-<footer>
+<body class="bg-slate-100">
+  <footer class="h-full">
+    <div class="background h-full">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1600 900"
+      >
+        <defs>
+          <path
+            id="wave"
+            fill="rgba(55, 65, 81, 0.6)"
+            d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+          />
+        </defs>
+        <g>
+          <use xlink:href="#wave" opacity=".4">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacty=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="4s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+    </div>
+    <section class="flex flex-col items-center justify-center gap-4 pb-20 px-4 md:pb-20 md:px-0">
+          
+      <img src="/public/img/12.png" alt="Logo" class="w-24 h-auto" />
+      <p class="text-sm my-0">Av.Lafinur 654, San Luis, Argentina, 5700</p>
+      <p class="text-xs md:text-sm">© 2024 Todos los derechos reservados.</p>
+    </section>
+  </footer>
+</body>
 
+<style>
+body {
+  margin: 0;
+  font-family: "Euclid Circular A", "Poppins", sans-serif;
+}
 
-    
-</footer>
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(3.5) scaleX(2.25);
+  transform-origin: bottom;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Agrandar las waves en pantallas medianas */
+@media (min-width: 768px) {
+  svg {
+    transform: scaleY(4.5) scaleX(3.5);
+  }
+}
+
+section {
+  z-index: 2;
+  position: relative;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+</style>
